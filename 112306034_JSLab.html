@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>112306034_JSLab</title>
+    <style>
+        body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 100vh; /* Use the full height of the viewport */
+        margin: 0;
+      }
+        </style>
+</head>
+<body>
+    <script>
+        var num1,num2;
+        num1 = window.prompt('Enter the first number:');
+        num2 = window.prompt('Enter the second number');
+        if(parseInt(num1)>parseInt(num2)){
+          document.writeln('1 > 2');
+          document.body.style.backgroundColor = 'Lightblue';
+        }
+        if(parseInt(num2)>parseInt(num1)){
+          document.writeln('2 > 1');
+          document.body.style.backgroundColor = 'Orange';
+        }
+        if(parseInt(num2) == parseInt(num1)){
+          document.writeln('1 = 2');
+          document.body.style.backgroundColor = 'Lightyellow';
+        }
+          </script>
+          <div>
+            <button onclick="alert(num1)" >Show your first input.</button>
+          </div>
+          <div>
+          <button onclick="alert(num2)">Show your second input.</button>
+          </div>
+</body>
+</html>
